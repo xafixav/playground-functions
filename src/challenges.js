@@ -15,9 +15,7 @@ function calcArea(base, height) {
   } else if (base == 51 && height == 1){ 
     return 25.5;}
     return([base * height]/2);
-
 }
-console.log(calcArea(51, 1))
 // Desafio 3
 function splitSentence() {
   // seu código aqui
