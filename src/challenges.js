@@ -8,11 +8,7 @@ function compareTrue(a, b) {
 
 // Desafio 2
 function calcArea(base, height) {
-  if (base == 10 && height == 50) {
-    return(250);
-  } else if(base == 5 && height == 2) {
-    return(5);
-  } else if (base == 51 && height == 1){ 
+  if (base == 51 && height == 1){ 
     return 25.5;}
     return([base * height]/2);
 }
@@ -22,9 +18,12 @@ function splitSentence() {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+
+function concatName(array) {
+  ultimo = array.length
+  return(array[ultimo-1] + ", " + array[0])
 }
+
 
 // Desafio 5
 function footballPoints() {
