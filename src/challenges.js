@@ -46,16 +46,6 @@ function highestCount(array) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let contador = 0;
-  if (mouse > cat1){
-
-  } else if (mouse < cat1) {
-
-  } else if (mouse > cat2) {
-
-  } else if (mouse < cat2) {
-
-  }
 
 }
 
