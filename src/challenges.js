@@ -11,8 +11,8 @@ function calcArea(base, height) {
   return ([base * height] / 2);
 }
 // Desafio 3
-function splitSentence(phrase) {
-  return (phrase.split(' '));
+function splitSentence(frase) {
+  return (frase.split(' '));
 }
 
 // Desafio 4
@@ -27,6 +27,7 @@ function footballPoints(wins, ties) {
   return (wins * 3 + ties);
 }
 
+
 // Desafio 6
 function highestCount(array) {
   let maior = array[0];
@@ -34,20 +35,27 @@ function highestCount(array) {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] > maior) {
       maior = array[index];
+      index = 0
+      contador = 0       
     } else if (array[index] === maior) {
       contador += 1;
-    }
+    } 
   }
-  return contador;
+  return (contador);
 }
+
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let dCat1 = mouse - cat1
-  if(dCat1 < 0) {
-    dCat1 * -1
+let contador1 = 0;
+let contador2 = 0;
+if (mouse - cat1 > 0){
+
+} else if (mouse - cat2 > 0){
+  
 }
 }
+
 
 // Desafio 8
 function fizzBuzz() {
