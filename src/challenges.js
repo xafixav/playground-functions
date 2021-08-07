@@ -7,14 +7,12 @@ function compareTrue(a, b) {
 }
 
 // Desafio 2
-function calcArea(base, height) {
-  if (base == 51 && height == 1){ 
-    return 25.5;}
-    return([base * height]/2);
+function calcArea(base, height) {    
+  return ([base * height] / 2);
 }
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(phrase) {
+  return (phrase.split(' '));
 }
 
 // Desafio 4
@@ -44,8 +42,11 @@ function highestCount(array) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let dCat1 = mouse - cat1
+  if(dCat1 < 0) {
+    dCat1 * -1
+}
 }
 
 // Desafio 8
