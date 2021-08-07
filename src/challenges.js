@@ -12,7 +12,7 @@ function calcArea(base, height) {
 }
 // Desafio 3
 function splitSentence(frase) {
-  return (frase.split(' '));
+  return (frase.split(' ')) ;
 }
 
 // Desafio 4
@@ -78,11 +78,31 @@ function fizzBuzz(array) {
 
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let a = /a/g;
+  let e = /e/g;
+  let i = /i/g;
+  let o = /o/g;
+  let u = /u/g;
+  let subA = a[Symbol.replace](frase, "1");
+  let subE = e[Symbol.replace](subA, "2");
+  let subI = i[Symbol.replace](subE, "3");
+  let subO = o[Symbol.replace](subI, "4");
+  let subU = u[Symbol.replace](subO, "5");
+  return (subU);
 }
-function decode() {
-  // seu código aqui
+function decode(frase) {
+  let a = /1/g;
+  let e = /2/g;
+  let i = /3/g;
+  let o = /4/g;
+  let u = /5/g;
+  let subA = a[Symbol.replace](frase, "a");
+  let subE = e[Symbol.replace](subA, "e");
+  let subI = i[Symbol.replace](subE, "i");
+  let subO = o[Symbol.replace](subI, "o");
+  let subU = u[Symbol.replace](subO, "u");
+  return (subU); 
 }
 
 module.exports = {
