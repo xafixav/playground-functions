@@ -1,7 +1,7 @@
 // Desafio 1
 function compareTrue(a, b) {
   if (a === true && b === true) { 
-    return true; 
+    return true;
   } 
   return false;
 }
@@ -19,7 +19,7 @@ function splitSentence(frase) {
 
 function concatName(array) {
   let ultimo = array.length;
-  return (array[ultimo-1] + ", " + array[0]);
+  return (`${array[ultimo-1]}, ${array[0]}`);
 }
 
 // Desafio 5
@@ -46,19 +46,29 @@ function highestCount(array) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-
+let distancia1 = Math.abs(cat1 - mouse); // retorna o resultado sempre positivo
+let distancia2 = Math.abs(cat2 - mouse); // retorna o resultado sempre positivo
+let resultado = '';
+    if (distancia1 < distancia2) {
+    resultado = 'cat1'
+  } else if (distancia2 < distancia1) {
+    resultado = 'cat2'
+  } else {
+    resultado = "os gatos trombam e o rato foge"
+  }
+  return(resultado)
 }
 
 // Desafio 8
 function fizzBuzz(array) {
   let resultado = [] 
   for(let i = 0; i < array.length ; i += 1) {
-    if (array[i] % 3 == 0 && array[i] % 5 != 0) {
+    if (array[i] % 3 === 0 && array[i] % 5 !== 0) {
       resultado.push("fizz");
-    } else if (array[i] % 5 == 0 && array[i] % 3 != 0) {
+    } else if (array[i] % 5 === 0 && array[i] % 3 !== 0) {
       resultado.push("buzz");
-    } else if (array[i] % 3 == 0 && array[i] % 5 == 0) {
-      resultado.push("fizzBuzz")  ;    
+    } else if (array[i] % 3 === 0 && array[i] % 5 === 0) {
+      resultado.push("fizzBuzz");
     } else {
       resultado.push("bug!");
     }
