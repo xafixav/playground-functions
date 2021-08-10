@@ -27,7 +27,6 @@ function footballPoints(wins, ties) {
   return (wins * 3 + ties);
 }
 
-
 // Desafio 6
 function highestCount(array) {
   let maior = array[0];
@@ -39,7 +38,7 @@ function highestCount(array) {
       contador = 0;
     } else if (array[index] === maior) {
       contador += 1;
-    } 
+    }
   }
   return (contador);
 }
@@ -56,26 +55,25 @@ function catAndMouse(mouse, cat1, cat2) {
   } else {
     resultado = 'os gatos trombam e o rato foge';
   }
-  return(resultado);
+  return (resultado);
 }
 
 // Desafio 8
 function fizzBuzz(array) {
-  let resultado = [] 
-  for(let i = 0; i < array.length ; i += 1) {
+  let resultado = [];
+    for(let i = 0; i < array.length ; i += 1) {
     if (array[i] % 3 === 0 && array[i] % 5 !== 0) {
-      resultado.push("fizz");
+      resultado.push('fizz');
     } else if (array[i] % 5 === 0 && array[i] % 3 !== 0) {
-      resultado.push("buzz");
+      resultado.push('buzz');
     } else if (array[i] % 3 === 0 && array[i] % 5 === 0) {
-      resultado.push("fizzBuzz");
+      resultado.push('fizzBuzz');
     } else {
-      resultado.push("bug!");
+      resultado.push('bug!');
     }
   }
   return (resultado)
 }
-
 
 // Desafio 9
 function encode(frase) {
@@ -102,7 +100,7 @@ function decode(frase) {
   let subI = i[Symbol.replace](subE, 'i');
   let subO = o[Symbol.replace](subI, 'o');
   let subU = u[Symbol.replace](subO, 'u');
-  return (subU); 
+  return (subU);
 }
 
 module.exports = {
