@@ -1,25 +1,25 @@
 // Desafio 1
 function compareTrue(a, b) {
-  if (a === true && b === true) { 
+  if (a === true && b === true) {
     return true;
-  } 
+  }
   return false;
 }
 
 // Desafio 2
-function calcArea(base, height) {    
+function calcArea(base, height) {
   return ([base * height] / 2);
 }
 // Desafio 3
 function splitSentence(frase) {
-  return (frase.split(' ')) ;
+  return (frase.split(' '));
 }
 
 // Desafio 4
 
 function concatName(array) {
   let ultimo = array.length;
-  return (`${array[ultimo-1]}, ${array[0]}`);
+  return (`${array[ultimo - 1]}, ${array[0]}`);
 }
 
 // Desafio 5
@@ -35,8 +35,8 @@ function highestCount(array) {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] > maior) {
       maior = array[index];
-      index = 0
-      contador = 0       
+      index = 0;
+      contador = 0;
     } else if (array[index] === maior) {
       contador += 1;
     } 
@@ -46,17 +46,17 @@ function highestCount(array) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-let distancia1 = Math.abs(cat1 - mouse); // retorna o resultado sempre positivo
-let distancia2 = Math.abs(cat2 - mouse); // retorna o resultado sempre positivo
-let resultado = '';
-    if (distancia1 < distancia2) {
-    resultado = 'cat1'
+  let distancia1 = Math.abs(cat1 - mouse); // retorna o resultado sempre positivo
+  let distancia2 = Math.abs(cat2 - mouse); // retorna o resultado sempre positivo
+  let resultado = '';
+  if (distancia1 < distancia2) {
+    resultado = 'cat1';
   } else if (distancia2 < distancia1) {
-    resultado = 'cat2'
+    resultado = 'cat2';
   } else {
-    resultado = "os gatos trombam e o rato foge"
+    resultado = 'os gatos trombam e o rato foge';
   }
-  return(resultado)
+  return(resultado);
 }
 
 // Desafio 8
@@ -84,11 +84,11 @@ function encode(frase) {
   let i = /i/g;
   let o = /o/g;
   let u = /u/g;
-  let subA = a[Symbol.replace](frase, "1");
-  let subE = e[Symbol.replace](subA, "2");
-  let subI = i[Symbol.replace](subE, "3");
-  let subO = o[Symbol.replace](subI, "4");
-  let subU = u[Symbol.replace](subO, "5");
+  let subA = a[Symbol.replace](frase, '1');
+  let subE = e[Symbol.replace](subA, '2');
+  let subI = i[Symbol.replace](subE, '3');
+  let subO = o[Symbol.replace](subI, '4');
+  let subU = u[Symbol.replace](subO, '5');
   return (subU);
 }
 function decode(frase) {
@@ -97,11 +97,11 @@ function decode(frase) {
   let i = /3/g;
   let o = /4/g;
   let u = /5/g;
-  let subA = a[Symbol.replace](frase, "a");
-  let subE = e[Symbol.replace](subA, "e");
-  let subI = i[Symbol.replace](subE, "i");
-  let subO = o[Symbol.replace](subI, "o");
-  let subU = u[Symbol.replace](subO, "u");
+  let subA = a[Symbol.replace](frase, 'a');
+  let subE = e[Symbol.replace](subA, 'e');
+  let subI = i[Symbol.replace](subE, 'i');
+  let subO = o[Symbol.replace](subI, 'o');
+  let subU = u[Symbol.replace](subO, 'u');
   return (subU); 
 }
 
